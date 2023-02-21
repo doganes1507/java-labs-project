@@ -8,7 +8,8 @@ public class Program {
     {
         System.out.println("Hello World");
         System.out.println(multiply(15, 0.5));
-        System.out.println(find_divisors(24));
+        System.out.println(findDivisors(24));
+        System.out.println(isPrime(24));
     }
 
     public static double multiply(double a, double b)
@@ -16,7 +17,7 @@ public class Program {
         return a * b;
     }
 
-    public static ArrayList<Integer> find_divisors(double n)
+    public static ArrayList<Integer> findDivisors(double n)
     {
         var divisors = new ArrayList<Integer>();
         divisors.add(1);
@@ -32,5 +33,18 @@ public class Program {
         }
         Collections.sort(divisors);
         return divisors;
+    }
+    
+    public static boolean isPrime(int n)
+    {
+        for (int i = 2; i <= sqrt(n); i++)
+        {
+            if (n % i == 0)
+            {
+                return false;
+            }
+        }
+        
+        return true;
     }
 }
