@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.Collections;
+
+import static java.lang.Math.sqrt;
 
 public class Program {
     public static void main(String[] args)
@@ -16,15 +19,18 @@ public class Program {
     public static ArrayList<Integer> find_divisors(double n)
     {
         var divisors = new ArrayList<Integer>();
+        divisors.add(1);
+        divisors.add((int) n);
 
-        for (int i = 1; i <= n; i++)
+        for (int i = 2; i <= sqrt(n); i++)
         {
             if (n % i == 0)
             {
                 divisors.add(i);
+                divisors.add((int) n / i);
             }
         }
-
+        Collections.sort(divisors);
         return divisors;
     }
 }
