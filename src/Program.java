@@ -16,8 +16,9 @@ public class Program {
     public static ArrayList<Integer> find_divisors(double n)
     {
         var divisors = new ArrayList<Integer>();
+        divisors.add(1);
 
-        for (int i = 1; i <= n; i++)
+        for (int i = 2; i <= n / 2; i++)
         {
             if (n % i == 0)
             {
@@ -25,6 +26,7 @@ public class Program {
             }
         }
 
+        divisors.add((int) n);
         return divisors;
     }
 }
