@@ -11,6 +11,11 @@ public class Point2D
         this.coordinateY = coordinateY;
     }
 
+    public Point2D()
+    {
+        this(0, 0);
+    }
+
     public void setCoordinateX(double value) { this.coordinateX = value; }
     public void setCoordinateY(double value) { this.coordinateY = value; }
 
