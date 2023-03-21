@@ -2,10 +2,10 @@ package LaboratoryWork2;
 
 public class Point2D
 {
-    private double coordinateX;
-    private double coordinateY;
+    protected double coordinateX;
+    protected double coordinateY;
 
-    public Point2D(int coordinateX, int coordinateY)
+    public Point2D(double coordinateX, double coordinateY)
     {
         this.coordinateX = coordinateX;
         this.coordinateY = coordinateY;
