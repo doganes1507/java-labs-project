@@ -28,6 +28,8 @@ public class AStarState
             throw new NullPointerException("map cannot be null");
 
         this.map = map;
+        openPoint = new HashMap<>();
+        closePoint = new HashMap<>();
     }
 
     /** Returns the map that the A* pathfinder is navigating. **/
