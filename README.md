@@ -1,8 +1,9 @@
 # javaEducationProject
 
-This is a collection of Java labs for the MTUCI university course.
+This is a collection of labs for the Java course at MTUCI.
 
 ## Labs
+
 The labs included in this project are:
 
 * Lab 1: Working with functions to solve some basic problems
