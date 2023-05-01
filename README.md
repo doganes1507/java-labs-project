@@ -1,4 +1,4 @@
-# javaLabsProject
+# java-labs-project
 
 This is a collection of labs for the Java course at MTUCI.
 
